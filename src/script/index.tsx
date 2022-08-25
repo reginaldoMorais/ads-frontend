@@ -1,6 +1,16 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Main } from './components/Main';
+import { AppContext } from '../lib/context';
+import json from '../data/coverage.json';
 
-import { App } from './components/App';
+const App = () => {
+  const [appContext, setAppContext] = useState(json);
+  return (
+    <AppContext.Provider value={{ appContext, setAppContext }}>
+      <Main />
+    </AppContext.Provider>
+  );
+};
 
-ReactDom.render(<App />, document.querySelector('#app'));
+ReactDOM.render(<App />, document.querySelector('#app'));
