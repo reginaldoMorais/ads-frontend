@@ -1,0 +1,28 @@
+.vehicles {
+  grid-area: vehicles;
+  margin-top: 1rem;
+  margin-right: 1rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    rotate: revert;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    li {
+      box-sizing: border-box;
+      display: flex;
+      align-items: end;
+      padding: 0.3rem 0.5rem;
+      background: #e5e5e5;
+      margin: 0.5rem 0;
+      width: 100%;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.coverages {
+  grid-area: coverages;
+
+  margin-top: 1rem;
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    rotate: revert;
+    margin: 0;
+    padding: 0;
+
+    li {
+      box-sizing: border-box;
+      cursor: pointer;
+      background: #e4e4e4;
+      align-items: end;
+      margin: 0 0.5rem 1rem;
+      padding: 0;
+      display: flex;
+
+      &.yes {
+        background-color: #0071bd;
+      }
+
+      &:first-child {
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      button {
+        background-color: transparent;
+        border: 0 none;
+        cursor: pointer;
+        padding: 1rem 1.2rem;
+      }
+    }
+  }
+}

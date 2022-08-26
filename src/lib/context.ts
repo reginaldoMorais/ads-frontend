@@ -17,7 +17,12 @@ export interface IAppContext {
   coverage: ICoverage;
 }
 
-export const AppContext = React.createContext({
+export interface IAppContextState {
+  appContext: IAppContext;
+  setAppContext: Function;
+}
+
+export const AppContext = React.createContext<IAppContextState>({
   appContext: json,
-  setAppContext: (f) => f,
+  setAppContext: (f: any): any => f,
 });

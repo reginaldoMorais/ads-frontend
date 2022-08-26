@@ -1,0 +1,30 @@
+// This file is only an example. Please delete it before you submit your test.
+body {
+  font-family: monospace;
+  background: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'logo years'
+    'vehicles coverages';
+  font-size: 1.2rem;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+#app {
+  display: flex;
+}
